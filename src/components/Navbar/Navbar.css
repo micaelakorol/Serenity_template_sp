@@ -1,0 +1,138 @@
+/* ===============================================
+   NAVBAR GENERAL
+================================================= */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  z-index: 1000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===============================================
+   LOGO
+================================================= */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ===============================================
+   MENU DESKTOP
+================================================= */
+.menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: color 0.25s;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+/* ===============================================
+   BOTÓN PRINCIPAL
+================================================= */
+.btn-primary {
+  background: var(--color-primary);
+  padding: 10px 18px;
+  color: white !important;
+  border-radius: 10px;
+  transition: background 0.25s;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+/* ===============================================
+   HAMBURGUESA (mobile)
+================================================= */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  background: var(--color-text);
+  transition: 0.3s;
+}
+
+/* Estados animados al abrir */
+.bar1-close {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar2-close {
+  opacity: 0;
+}
+
+.bar3-close {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===============================================
+   MENU MOBILE
+================================================= */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 26px 0;
+    gap: 20px;
+    background: #fff;
+    text-align: center;
+    display: none;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Clase que abre el menú */
+  .menu-open {
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

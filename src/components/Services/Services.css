@@ -1,0 +1,67 @@
+/* ===============================================
+   SECCIÓN SERVICIOS
+================================================= */
+#services {
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #1e293b;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+/* GRID */
+.services-grid {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  cursor: pointer;
+}
+
+/* TARJETAS */
+.service-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  text-align: center;
+  transition: 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ICONO */
+.service-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+/* TEXTOS */
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.service-card p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

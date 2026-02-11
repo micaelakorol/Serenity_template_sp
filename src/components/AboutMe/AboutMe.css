@@ -1,0 +1,86 @@
+/* ===============================================
+   SECCIÓN SOBRE MÍ
+================================================= */
+#about {
+  padding: 100px 24px;
+  background: #f8faf9;
+}
+
+.about-container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* ---------- IMAGEN ---------- */
+
+.about-img-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ---------- TEXTO ---------- */
+
+.about-content {
+  flex: 1;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1e293b; /*Puede personalizar los colores si lo desea*/
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+/* ---------- BOTÓN OUTLINE ---------- */
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ===============================================
+   RESPONSIVE
+================================================= */
+
+@media (max-width: 850px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 0 auto 30px;
+  }
+}
