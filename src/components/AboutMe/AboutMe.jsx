@@ -1,6 +1,6 @@
 import './AboutMe.css'
 import image from '../../assets/psicologa.webp'
-
+import { siteConfig } from '../../config/siteConfig';
 const AboutMe = () => {
   return (
     <section id="about">
@@ -14,10 +14,10 @@ const AboutMe = () => {
         </div>
 
         <div class="about-content">
-          <h2 class="about-title">Hola, soy Laura Martínez</h2>
+          <h2 class="about-title">Hola, soy {siteConfig.professionalName}</h2>
 
           <p class="about-text">
-            Soy psicóloga especializada en bienestar emocional, ansiedad y
+            Soy {siteConfig.specialty} especializada en bienestar emocional, ansiedad y
             desarrollo personal. Acompaño a personas en su proceso terapéutico,
             ayudándolas a construir una vida más consciente, equilibrada y
             plena. Desde un enfoque humano y cercano, trabajo con herramientas

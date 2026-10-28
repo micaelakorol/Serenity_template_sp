@@ -11,9 +11,9 @@ const socialLinks = [
     icon: "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1765820361/REDES-SOCIALES-ICON/facebook-svgrepo-com_umjpfs.svg",
   },
   {
-    name: "Pinterest",
-    href: "https://pinterest.com",
-    icon: "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1765820372/REDES-SOCIALES-ICON/pinterest-180-svgrepo-com_hcoada.svg",
+    name: "WhatsApp",
+    href: "https://whatsApp.com",
+    icon: "https://res.cloudinary.com/dgqyqd2pa/image/upload/v1778261161/emeka.site/whatsapp-svgrepo-com_sasfwp.svg",
   },
   {
     name: "Email",

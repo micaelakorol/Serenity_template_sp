@@ -1,4 +1,3 @@
-import React from 'react';
 import './HeroSection.css';
 import person from '../../assets/persona.webp';
 
